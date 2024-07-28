@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth !important;
+    scrollbar-width: none !important;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif !important;
+    padding: 0 !important;
+}
+
+.font-esthetic {
+    font-family: Sacramento, cursive !important;
+}
+
+.font-arabic {
+    font-family: 'Noto Naskh Arabic', serif !important;
+}
+
+.img-crop {
+    width: 14rem;
+    height: 14rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-crop>img {
+    display: inline;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+}
+
+.btn-music {
+    position: fixed;
+    bottom: 9vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+}
+
+.btn-theme {
+    position: fixed;
+    bottom: 15vh !important;
+    right: 2vh !important;
+    z-index: 1055 !important;
+}
+
+.loading-page {
+    position: fixed;
+    inset: 0 !important;
+    width: 100%;
+    height: 100%;
+    z-index: 1056 !important;
+}
+
+.card-body {
+    overflow-wrap: break-word !important;
+}
+
+.mouse-animation {
+    padding: 0.25rem 0.625rem;
+    height: 2rem;
+    border-radius: 1.4rem;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+
+    10% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+.mouse-animation>.scroll-animation {
+    width: 0.25rem;
+    height: 0.625rem;
+    border-radius: 25%;
+    background-color: #808080;
+    animation-name: scroll;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin-icon {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin-button {
+    animation: spin-icon 5s linear infinite;
+}
+
+@keyframes love {
+    50% {
+        transform: translateY(1rem);
+    }
+}
+
+.animate-love {
+    animation: love 5s ease-in-out infinite;
+}
+
+.dark-section {
+    margin-top: -0.5rem;
+    margin-bottom: -0.5rem;
+}
+
+footer {
+    margin-top: -0.5rem;
+    padding-bottom: 4rem;
+}
+
+.bg-theme-light {
+    background-color: var(--bs-gray-100);
+}
+
+.bg-theme-dark {
+    background-color: var(--bs-gray-800);
+}
+
+.color-theme-white {
+    color: white;
+}
+
+.color-theme-black {
+    color: black;
+}
+
+.bg-pink {
+    background-color: #DB7093;
+}
+
+.bg-welcome-img {
+   background-image: url("../assets/images/IMG_0832.jpg");
+   background-size: cover; /* Other options: contain, 100% 100%, etc. */
+   width: 100%; /* Set your desired width */
+   height: 100%; /* Set your desired height */ 
+   background-repeat: no-repeat;
+   background-position: center;
+}
+
+.bg-welcome-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); /* Warna dan transparansi */
+    z-index: 1;
+}
+
+.content-undangan{
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.content-undangan button{
+    margin-top: 20px; /* Jarak antara teks dan tombol */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #DB7093;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    transition: background-color 0.3s, transform 0.3s; /* Efek transisi */
+    }
+
+.content-undangan button:hover{
+    background-color: rgba(255, 255, 255, 0.3); /* Warna tombol saat dihover */
+    transform: scale(1.05); /* Efek zoom saat dihover */
+}
+
+.content-undangan h1{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.font-color-pink {
+    color: #DB7093;
+}
+
+.bg-main-img {
+    background-image: url("../assets/images/bg_img.PNG");
+    background-size: 100vw 100vh;
+ }
+
+ .font-color-black {
+    color: #000000;
+}
+
+.bg-white {
+    background-color: #FFFFFF;
+}
+
+.bg-red {
+    background-color: #FF0000;
+}
+
+.bg-blue {
+    background-color: #0000FF;
+}
+
+@font-face{
+    font-family:'LPMQ';
+    src:url('https://kangismet.github.io/fonts/lpmq.eot');
+    src:url('https://kangismet.github.io/fonts/lpmq.eot?#iefix') format('embedded-opentype'),
+    url('https://kangismet.github.io/fonts/lpmq.ttf') format('truetype');
+    font-weight:400;
+    font-weight:normal;
+    font-display: swap;
+}
+
+.font-arab{
+    font-size: 26px;
+    line-height: 48px;
+    font-family: LPMQ,"Traditional Arabic",Tahoma,sans-serif;
+    font-weight: normal;
+    text-align: center;
+    direction: rtl;
+}
+
+.google-map {
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+ .bg-home-img {
+   background-image: url("../assets/images/DC00985.jpg");
+   background-size: cover; /* Other options: contain, 100% 100%, etc. */
+   width: 100%; /* Set your desired width */
+   height: 100%; /* Set your desired height */ 
+   background-repeat: no-repeat;
+   background-position: center;
+ }
+ 
+ .bg-home-img::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.3); /* Warna dan transparansi */
+     z-index: 1;
+ }
